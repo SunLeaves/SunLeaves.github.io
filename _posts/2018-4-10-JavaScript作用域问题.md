@@ -1,15 +1,15 @@
 ---
 layout:     post
-title:      JavaScript笔记
+title:      JavaScript笔记--基础语法
 subtitle:   
-date:       2018-3-18
+date:       2018-4-10
 author:     xiezht
 header-img: 
 catalog: true
 tags: JavaScript
 ---
 
-# JavaScript Notes
+# JavaScript Notes--基础语法
 ***
 
 ## 作用域
@@ -52,7 +52,7 @@ tags: JavaScript
 
 函数参数类型为复合类型（Array, Object, Function）时，传递方式是传址传递。类似与C++的引用，可以在函数内部修改并影响外部。
 
-*如果函数内部修改的，不是参数对象的某个属性，而是替换掉整个参数，这时不会影响到原始值。*
+**如果函数内部修改的，不是参数对象的某个属性，而是替换掉整个参数，这时不会影响到原始值。**
 
 因为形式参数的值是一个地址，重新对其进行赋值，并不会改变地址内的数据。类似于C对指针的重新赋值，原来内存地址的数据并不会因此消失。
 
@@ -82,3 +82,81 @@ tags: JavaScript
 
 * 封装对象的私有属性和私有方法
 
+	function Student(name) {
+		var _number;
+		function setStudNum(num) {
+			_number = num;
+		}
+		function getStudNum() {
+			return _number;
+		}
+		return {
+			name: name,
+			setStudNum: setStudNum,
+			getStudNum: getStudNum
+		};
+	}
+
+
+**外层函数每次运行，都会生成新的闭包，闭包包含外层函数的内部变量，占用内存**
+
+
+
+## 运算符
+***
+
+### 算术运算符
+***
+算术运算符：只有加法运算符存在重载，其他算术运算符（-，\*，/）一律将算子转为数值。
+
+#### 加法运算
+***
+
+##### 对象加法
+***
+* 调用对象valueOf方法
+* 若valueOf方法返回自身，则调用对象的toString方法
+	+ toStrinh方法默认返回[Object, Object]
+
+**可以通过自定义对象的valueOf或者toString方法来执行加法**
+
+#### 比较运算符
+***
+非相等比较看能否将运算子转化为字符串，可以则按字典序比较。否则转为数值比较。
+
+##### 字符串比较
+***
+字典序比较
+
+##### 非字符串比较
+***
+
+###### 原始类型比较
+***
+除了 == 与 === 之外，其他的比较运算符都先将算子转为数值再比较。
+
+###### 对象
+***
+调用valueOf方法/toString方法，转化为原始类型的值再比较。
+
+**例外：Date对象先调用的是toString方法，若返回值不是原始类型，则再调用valueOf方法**
+
+
+#### 相等与严格相等运算符
+***
+
+相等运算符比较两个算子的值是否相等。
+
+严格相等运算符则比较是否为“同一个值”。
+
+不同类型：
+* == ：转为同一类型再用严格相等 === 比较
+* ===：直接返回false
+
+##### 严格相等运算符
+***
+（待完成）
+
+##### 相等运算符
+***
+（待完成）
