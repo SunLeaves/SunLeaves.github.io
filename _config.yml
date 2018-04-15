@@ -7,7 +7,7 @@ description: "No description."
 keyword: "xiezht, blog, program, learning"
 url: "http://xiezht.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/xiezht/sunleaves.github.io.git" # you code repository
+github_repo: "https://github.com/xiezht/xiezht.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
