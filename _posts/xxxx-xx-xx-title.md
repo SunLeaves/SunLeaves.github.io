@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      多核程序设计之多线程
+title:      Name
 subtitle:   
-date:       2018-4-22
+date:       2018-04-22
 author:     xiezht
 header-img: 
 catalog: true
 tags: 
-	- 并行计算
+    - Tag
 ---
 
