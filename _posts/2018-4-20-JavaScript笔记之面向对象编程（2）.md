@@ -7,7 +7,7 @@ author:     xiezht
 header-img: 
 catalog: true
 tags: 
-	- JavaScript
+    - JavaScript
 ---
 
 ## 1. prototye

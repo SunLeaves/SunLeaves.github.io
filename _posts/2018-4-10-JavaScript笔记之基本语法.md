@@ -6,7 +6,8 @@ date:       2018-4-10
 author:     xiezht
 header-img: 
 catalog: true
-tags: JavaScript
+tags: 
+    - JavaScript
 ---
 
 # JavaScript Notes--基础语法
