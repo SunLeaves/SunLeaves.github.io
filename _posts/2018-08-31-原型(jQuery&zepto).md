@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      原型(jQuery&zepto)
+title:      原型（结合jQuery&zepto）（视频笔记）
 subtitle:   
 date:       2018-08-31
 author:     xiezht
