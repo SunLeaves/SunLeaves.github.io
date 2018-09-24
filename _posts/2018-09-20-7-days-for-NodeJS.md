@@ -75,7 +75,6 @@ console.log(buf)
 ```
 var dup = new Buffer(buf.length)
 buf.copy(dup)
-
 ```
 
 ## Stream数据流模块
@@ -119,7 +118,6 @@ fs.readFile(pathname, function callback(error, data) {
   else {}
 })
 ```
-
 
 同步版本
 
