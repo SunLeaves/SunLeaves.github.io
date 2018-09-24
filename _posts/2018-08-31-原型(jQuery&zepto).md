@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      原型（结合jQuery&zepto）（视频笔记）
+title:      原型（jQuery&zepto）
 subtitle:   
 date:       2018-08-31
 author:     xiezht
@@ -8,7 +8,7 @@ header-img:
 catalog: true
 tags: 
     - JavaScript
-    - 视频笔记
+    - 笔记
 ---
 
 > 解读jQuery & zepto中原型的应用

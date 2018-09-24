@@ -8,7 +8,10 @@ header-img:
 catalog: true
 tags: 
     - JavaScript
+    - 笔记
 ---
+
+（待完成）
 
 > 1. 简单工厂模式
 >
