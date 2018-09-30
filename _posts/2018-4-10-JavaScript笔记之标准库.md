@@ -247,7 +247,7 @@ String.fromCharCode()
 	+ String.prototype.split()
 		- 匹配规则：默认贪婪匹配
 		- 组匹配结果
-	
+
 
 ### 匹配规则
 
@@ -271,7 +271,7 @@ String.fromCharCode()
 
 #### 字符类
 	
-	//  examp;e
+	//  example
 	[xyz];
 
 + 脱字符： ^
