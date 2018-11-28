@@ -9,7 +9,26 @@
       JS Test
     </div>
 
-    <script src="./prototype.js">
+    <script>
+        function Bar() {
+            if (!(this instanceof Bar)) {
+                return new Bar()
+            }
+            this.x = 1
+        }
+
+        Bar.prototype.foo =  function() {
+            console.log('this is function foo')
+        }
+
+        Bar.util = function() {
+            console.log('this is function util')
+        }
+
+        var insBar = new Bar()
+        insBar.foo()
+        // insBar.util()
+        // Bar.util()
     </script>
 </body>
 </html>
